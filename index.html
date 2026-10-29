@@ -813,7 +813,7 @@ addEventListener('DOMContentLoaded', function(){
     {k:'Delivery', rooms:[
       ['PMP','Project Management Professional certified.'],
       ['PRINCE2','Certified in structured project delivery.'],
-      ['Six Sigma','White Belt in process improvement.'],
+      ['Vendor qualification','Algorithmic vendor qualification on the Sydney Metro export.'],
       ['Agile / Scrum','Iterative delivery across client and in-house teams.'],
       ['ERP · SAP / Oracle','ERP logistics systems and data workflows at TFI.'],
       ['KPI dashboards','Stakeholder dashboards fed by Snowflake and Databricks reporting.']]},
@@ -821,11 +821,11 @@ addEventListener('DOMContentLoaded', function(){
       ['Python','Main language for services, agents and data pipelines.'],
       ['Java','Backend services at Code Canvas.'],
       ['Kotlin','Backend services at Code Canvas.'],
-      ['Go','Client builds through freelance work.'],
-      ['Rust','Client builds through freelance work.'],
-      ['PHP','Services alongside the ERP integrations.']]},
-    {k:'Web', rooms:[
       ['JavaScript','Every front-end and bot I have shipped.'],
+      ['SQL','Query tuning and reporting, every day.'],
+      ['HTML & CSS','Hand-built front-ends, including this site.']]},
+    {k:'Web', rooms:[
+      ['Leaflet maps','Interactive site maps for Aptimizer X.'],
       ['React.js','Client web apps, 25+ delivered freelance.'],
       ['Next.js','Production web apps for clients in eight countries.'],
       ['Angular','Supply-chain front-ends used by 10+ stakeholders.'],
@@ -839,7 +839,7 @@ addEventListener('DOMContentLoaded', function(){
       ['Message queues','Async workers kept AI compute off the live MES.'],
       ['SQL optimisation','About 35% faster average query response at Code Canvas.']]},
     {k:'Data', rooms:[
-      ['SQL','Query tuning and reporting, every day.'],
+      ['Data access layers','Restructured at Code Canvas for faster peak queries.'],
       ['Snowflake','Automated cross-border reporting pipelines.'],
       ['Databricks','KPI and reporting pipelines at TFI and Code Canvas.'],
       ['Reporting automation','Replaced hand-assembled project documentation.'],
@@ -847,7 +847,7 @@ addEventListener('DOMContentLoaded', function(){
       ['3D bin-packing','ML-driven container load planning.']]},
     {k:'Cloud', rooms:[
       ['AWS','Infrastructure for five mission-critical dashboards.'],
-      ['Azure','Working knowledge.'],
+      ['Dedicated AI workers','AI compute moved onto dedicated workers, off the live MES.'],
       ['CI/CD','Pipelines for the services shipped at Code Canvas.'],
       ['Infra automation','Infrastructure automation on AWS.'],
       ['DevOps practice','Build and release owned inside the team.'],
@@ -858,7 +858,7 @@ addEventListener('DOMContentLoaded', function(){
       ['RAG pipelines','Retrieval over internal ERP and logistics documents.'],
       ['Agent workflows','Autonomous workflows that cut manual processing 40%.'],
       ['Multi-agent systems','Planner, structural, MEP, cost and report agents.'],
-      ['Computer vision · CNNs','Convolutional networks for image tasks.']]}
+      ['Genetic algorithm','Places towers on the buildable area in Aptimizer X.']]}
   ];
   const SPEC = [0xffb238,0xff7a45,0xff4f6d,0xf25fc6,0xa979ff,0x5e8bff,0x2cc9f0,0x3ef0b0];
   const roomCode = (f,r) => 'L' + String(f+1).padStart(2,'0') + ' · R' + (r+1);
@@ -1014,10 +1014,10 @@ addEventListener('DOMContentLoaded', function(){
   /* ======================= rooms used per project (A-301) ======================= */
   // by FLOORS room name, in the order the projects appear; only rooms the chips/descriptions name
   const USES = [
-    ['Formwork systems','Eurocode & ISO QA/QC','Supply-chain logistics','ERP · SAP / Oracle','Snowflake','Databricks'],
-    ['Python','OpenAI API','LangChain','RAG pipelines','Agent workflows','Flask','FastAPI','Angular','Node.js','AWS','CI/CD','Snowflake'],
-    ['FastAPI','Flask','Microservices','Message queues','3D bin-packing','MES / ERP data','LangChain','Databricks'],
-    ['GIS · OpenStreetMap','FAR/FSI · NBC/IS','Quantity & cost','Multi-agent systems','RAG pipelines']
+    ['Formwork systems','Eurocode & ISO QA/QC','Vendor qualification','Supply-chain logistics','ERP · SAP / Oracle','Snowflake','Databricks'],
+    ['Python','OpenAI API','LangChain','RAG pipelines','Agent workflows','Flask','FastAPI','Angular','Node.js','AWS','CI/CD','Snowflake','SQL','Data access layers'],
+    ['FastAPI','Flask','Microservices','Message queues','Dedicated AI workers','3D bin-packing','MES / ERP data','LangChain','Databricks'],
+    ['GIS · OpenStreetMap','FAR/FSI · NBC/IS','Quantity & cost','Multi-agent systems','RAG pipelines','Genetic algorithm','Leaflet maps']
   ];
   document.querySelectorAll('.proj').forEach((pj, k) => {
     const chips = pj.querySelector('.chips'), use = USES[k];
